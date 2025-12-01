@@ -1,0 +1,6 @@
+baseURL = "https://example.com/"
+locale = "en-us"
+title = "Hugo Basic Test Site"
+
+[params]
+  description = "A minimal Hugo site for testing the zip upload and publish flow."

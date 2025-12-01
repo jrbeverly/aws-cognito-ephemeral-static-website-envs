@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Single Index Test Site</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #222;
+  }
+
+  header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .upload-modes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .upload-mode {
+    background: #f6f8fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+  }
+
+  .upload-mode h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #0366d6;
+  }
+
+  .upload-mode p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #555;
+  }
+
+  footer {
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #666;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #ddf4ff;
+    color: #0969da;
+    border-radius: 10px;
+    padding: 0.125rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Single Index Test Site</h1>
+</header>
+
+<main>
+  <p>
+    This is a self-contained <strong>single-file HTML page</strong> used to test
+    the platform's simplest upload and publish flows.
+  </p>
+
+  <h2>Upload modes supported</h2>
+
+  <div class="upload-modes">
+    <div class="upload-mode">
+      <h3>&#128196; File upload</h3>
+      <p>Upload this <code>index.html</code> file directly through the portal's file picker.</p>
+    </div>
+
+    <div class="upload-mode">
+      <h3>&#8595; Drag-and-drop</h3>
+      <p>Drag this file from your file manager and drop it onto the portal upload area.</p>
+    </div>
+
+    <div class="upload-mode">
+      <h3>&#128203; Paste HTML</h3>
+      <p>Copy the full source of this page and paste it into the portal's HTML editor.</p>
+    </div>
+  </div>
+
+  <h2>What is this?</h2>
+
+  <p>
+    This page demonstrates that a single <code>index.html</code> file can be
+    published as a complete static site through the platform — no zip archives,
+    no build tools, just one file.
+  </p>
+
+  <p>
+    <span class="badge">Test page</span>
+    <span class="badge">Single file</span>
+    <span class="badge">Self-contained</span>
+  </p>
+</main>
+
+<footer>
+  Single Index Test Site &mdash; generated for upload-flow testing.
+</footer>
+
+</body>
+</html>

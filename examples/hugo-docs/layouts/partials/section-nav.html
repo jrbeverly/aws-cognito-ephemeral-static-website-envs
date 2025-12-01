@@ -1,0 +1,16 @@
+{{ $currentPage := . }}
+{{ if .Section }}
+  {{ $section := .Site.GetPage "section" .Section }}
+  {{ if $section }}
+    <p class="section-label">{{ $section.Title }}</p>
+    <ul class="section-nav">
+      {{ range $section.Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}"{{ if eq $currentPage.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

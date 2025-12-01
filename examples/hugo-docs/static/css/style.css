@@ -1,0 +1,154 @@
+/* Hugo Docs Test Site — styles for a multi-page documentation layout */
+
+/* ---- Base ---- */
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #222;
+}
+
+/* ---- Header ---- */
+
+header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #222;
+}
+
+.site-title:hover {
+  color: #0366d6;
+}
+
+nav[aria-label="Primary"] {
+  margin-top: 0.5rem;
+}
+
+nav[aria-label="Primary"] a {
+  margin-right: 1rem;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+nav[aria-label="Primary"] a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Layout — main + sidebar ---- */
+
+.layout {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ---- Sidebar ---- */
+
+aside {
+  flex: 0 0 200px;
+  border-right: 1px solid #eee;
+  padding-right: 1rem;
+}
+
+.section-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+  margin: 0 0 0.5rem 0;
+}
+
+.section-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.section-nav li {
+  margin-bottom: 0.25rem;
+}
+
+.section-nav a {
+  color: #0366d6;
+  text-decoration: none;
+  font-size: 0.925rem;
+}
+
+.section-nav a:hover {
+  text-decoration: underline;
+}
+
+.section-nav a[aria-current="page"] {
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---- Main content ---- */
+
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ---- Footer ---- */
+
+footer {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* ---- Page summaries (list pages) ---- */
+
+.page-summary {
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+}
+
+.page-summary:last-child {
+  border-bottom: none;
+}
+
+.page-summary h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.page-summary h3 a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.page-summary p {
+  margin: 0;
+  font-size: 0.925rem;
+  color: #555;
+}
+
+/* ---- Definition list (glossary) ---- */
+
+dl {
+  margin: 1rem 0;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+dd {
+  margin-left: 1rem;
+  color: #444;
+}

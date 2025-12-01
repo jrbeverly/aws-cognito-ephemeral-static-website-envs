@@ -1,0 +1,20 @@
+# ==============================================================================
+# Private environment — Internal/ZTNA deployment example
+#
+# Copy to private.tfvars (gitignored) and customize for your deployment:
+#   cp environments/private.tfvars.example environments/private.tfvars
+#   terraform apply -var-file=environments/private.tfvars
+#
+# Differs from lab:
+#   - deployment_mode = "private"
+#   - ALB scheme: internal (ZTNA / private network ingress)
+#   - DNS zone: private hosted zone
+#   - S3: accessed through VPC endpoints (no public S3 access)
+# ==============================================================================
+
+environment      = "prod"
+deployment_mode  = "private"
+aws_region       = "us-east-1"
+domain_name      = "example.com"
+portal_subdomain = "sites-admin"
+sites_subdomain  = "sites"

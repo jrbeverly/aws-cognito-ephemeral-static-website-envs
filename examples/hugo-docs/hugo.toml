@@ -1,0 +1,8 @@
+baseURL = "https://example.com/"
+locale = "en-us"
+title = "Hugo Docs Test Site"
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "A multi-page Hugo site with nested paths for testing the zip upload and publish flow."

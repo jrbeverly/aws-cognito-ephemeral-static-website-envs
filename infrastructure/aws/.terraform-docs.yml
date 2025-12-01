@@ -1,0 +1,23 @@
+# ==============================================================================
+# .terraform-docs.yml — terraform-docs configuration
+#
+# Run from infrastructure/aws/:
+#   terraform-docs markdown table --output-file README.md --output-mode inject .
+#   terraform-docs markdown table --output-file README.md --output-mode inject ./modules/cognito
+#   ... (repeat for each module)
+# ==============================================================================
+
+formatter: "markdown table"
+
+output:
+  file: "README.md"
+  mode: inject
+
+settings:
+  anchor: false
+  html: false
+  indent: 2
+
+sort:
+  enabled: true
+  by: required

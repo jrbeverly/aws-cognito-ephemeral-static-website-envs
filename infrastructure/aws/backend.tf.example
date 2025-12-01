@@ -1,0 +1,31 @@
+# ==============================================================================
+# backend.tf.example — Remote state with S3 and DynamoDB locking
+#
+# Copy to backend.tf when deploying with remote state:
+#
+#   cp backend.tf.example backend.tf
+#
+# Then initialize with a backend-config file or inline values:
+#
+#   terraform init \
+#     -backend-config="bucket=sites-platform-tfstate-<account-id>-us-east-1" \
+#     -backend-config="key=infrastructure/terraform.tfstate" \
+#     -backend-config="region=us-east-1" \
+#     -backend-config="dynamodb_table=sites-platform-tfstate-locks" \
+#     -backend-config="encrypt=true"
+#
+# Skeleton phase: backend.tf is gitignored. Omit it and use local state
+# for terraform validate / fmt checks.
+# ==============================================================================
+
+# Uncomment and copy to backend.tf when deploying:
+#
+# terraform {
+#   backend "s3" {
+#     bucket         = "sites-platform-tfstate-<account-id>-<region>"
+#     key            = "infrastructure/terraform.tfstate"
+#     region         = "us-east-1"
+#     dynamodb_table = "sites-platform-tfstate-locks"
+#     encrypt        = true
+#   }
+# }
